@@ -1,0 +1,31 @@
+name: nightbook-cycle
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nightbook-cycle
+  cancel-in-progress: false
+
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run one decision cycle
+        run: python3 decide.py
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "nightbook-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/history.csv decisions/latest.md decisions/log.jsonl
+          git diff --cached --quiet || git commit -m "cycle: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
