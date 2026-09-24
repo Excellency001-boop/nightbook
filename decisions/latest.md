@@ -1,23 +1,23 @@
 # Nightbook, live decision log
 
-Last run: 2026-09-24T17:34:19.846780+00:00
+Last run: 2026-09-24T20:46:03.956619+00:00
 
 Paper decisions only, no real orders, no capital, no exchange credentials in this repo.
 
 | symbol | decision | reason |
 |---|---|---|
-| RQQQUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RSPYUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RMUUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RVOOUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RIVVUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RNVDAUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RMETAUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RSNDKUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RAMDUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RINTCUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RSOXLUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RAAPLUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RTSLAUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RGOOGLUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
-| RAMZNUSDT | STAND_DOWN | regular market hours, strategy only operates after-hours/weekend |
+| RQQQUSDT | STAND_DOWN | insufficient sample, only 5 fills at the weakest quote depth, need 20+ |
+| RSPYUSDT | STAND_DOWN | insufficient sample, only 0 fills at the weakest quote depth, need 20+ |
+| RMUUSDT | STAND_DOWN | edge not robust across quote depths, negative or inconsistent |
+| RVOOUSDT | STAND_DOWN | insufficient sample, only 1 fills at the weakest quote depth, need 20+ |
+| RIVVUSDT | STAND_DOWN | insufficient sample, only 0 fills at the weakest quote depth, need 20+ |
+| RNVDAUSDT | STAND_DOWN | edge not robust across quote depths, negative or inconsistent |
+| RMETAUSDT | STAND_DOWN | edge not robust across quote depths, negative or inconsistent |
+| RSNDKUSDT | STAND_DOWN | edge not robust across quote depths, negative or inconsistent |
+| RAMDUSDT | STAND_DOWN | edge not robust across quote depths, negative or inconsistent |
+| RINTCUSDT | STAND_DOWN | insufficient sample, only 3 fills at the weakest quote depth, need 20+ |
+| RSOXLUSDT | STAND_DOWN | insufficient sample, only 0 fills at the weakest quote depth, need 20+ |
+| RAAPLUSDT | STAND_DOWN | insufficient sample, only 8 fills at the weakest quote depth, need 20+ |
+| RTSLAUSDT | STAND_DOWN | edge not robust across quote depths, negative or inconsistent |
+| RGOOGLUSDT | STAND_DOWN | edge not robust across quote depths, negative or inconsistent |
+| RAMZNUSDT | STAND_DOWN | insufficient sample, only 10 fills at the weakest quote depth, need 20+ |
