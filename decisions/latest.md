@@ -1,6 +1,6 @@
 # Nightbook, live decision log
 
-Last run: 2026-10-13T20:37:42.397160+00:00
+Last run: 2026-10-13T23:53:45.382189+00:00
 
 Paper decisions only, no real orders, no capital, no exchange credentials in this repo.
 
